@@ -18,6 +18,29 @@
       "type": "string",
       "minLength": 1,
       "maxLength": 255
+    },
+    "date_of_birth": {
+      "description": "Date of Birth",
+      "type": "string"
+    },
+    "checkin_date_time": {
+      "description": "Checkin Date Time",
+      "type": "string"
+    },
+    "checkout_date_time": {
+      "description": "Checkout Date Time",
+      "type": "string"
+    },
+    "total_price": {
+      "description": "Total Price",
+      "type": "integer"
+    },
+    "deposit": {
+      "description": "Deposit",
+      "type": "integer"
+    },
+    "address": {
+      "$ref": "address.json"
     }
   },
   "required": [

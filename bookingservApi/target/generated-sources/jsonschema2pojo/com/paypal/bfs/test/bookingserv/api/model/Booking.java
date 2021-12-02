@@ -22,7 +22,13 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
     "id",
     "first_name",
-    "last_name"
+    "last_name",
+    "date_of_birth",
+    "checkin_date_time",
+    "checkout_date_time",
+    "total_price",
+    "deposit",
+    "address"
 })
 public class Booking {
 
@@ -49,6 +55,50 @@ public class Booking {
     @JsonProperty("last_name")
     @JsonPropertyDescription("Last name")
     private String lastName;
+    /**
+     * Date of Birth
+     * 
+     */
+    @JsonProperty("date_of_birth")
+    @JsonPropertyDescription("Date of Birth")
+    private String dateOfBirth;
+    /**
+     * Checkin Date Time
+     * 
+     */
+    @JsonProperty("checkin_date_time")
+    @JsonPropertyDescription("Checkin Date Time")
+    private String checkinDateTime;
+    /**
+     * Checkout Date Time
+     * 
+     */
+    @JsonProperty("checkout_date_time")
+    @JsonPropertyDescription("Checkout Date Time")
+    private String checkoutDateTime;
+    /**
+     * Total Price
+     * 
+     */
+    @JsonProperty("total_price")
+    @JsonPropertyDescription("Total Price")
+    private Integer totalPrice;
+    /**
+     * Deposit
+     * 
+     */
+    @JsonProperty("deposit")
+    @JsonPropertyDescription("Deposit")
+    private Integer deposit;
+    /**
+     * Address
+     * <p>
+     * Address object
+     * 
+     */
+    @JsonProperty("address")
+    @JsonPropertyDescription("Address object")
+    private Address address;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -110,6 +160,118 @@ public class Booking {
         this.lastName = lastName;
     }
 
+    /**
+     * Date of Birth
+     * 
+     */
+    @JsonProperty("date_of_birth")
+    public String getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    /**
+     * Date of Birth
+     * 
+     */
+    @JsonProperty("date_of_birth")
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    /**
+     * Checkin Date Time
+     * 
+     */
+    @JsonProperty("checkin_date_time")
+    public String getCheckinDateTime() {
+        return checkinDateTime;
+    }
+
+    /**
+     * Checkin Date Time
+     * 
+     */
+    @JsonProperty("checkin_date_time")
+    public void setCheckinDateTime(String checkinDateTime) {
+        this.checkinDateTime = checkinDateTime;
+    }
+
+    /**
+     * Checkout Date Time
+     * 
+     */
+    @JsonProperty("checkout_date_time")
+    public String getCheckoutDateTime() {
+        return checkoutDateTime;
+    }
+
+    /**
+     * Checkout Date Time
+     * 
+     */
+    @JsonProperty("checkout_date_time")
+    public void setCheckoutDateTime(String checkoutDateTime) {
+        this.checkoutDateTime = checkoutDateTime;
+    }
+
+    /**
+     * Total Price
+     * 
+     */
+    @JsonProperty("total_price")
+    public Integer getTotalPrice() {
+        return totalPrice;
+    }
+
+    /**
+     * Total Price
+     * 
+     */
+    @JsonProperty("total_price")
+    public void setTotalPrice(Integer totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
+    /**
+     * Deposit
+     * 
+     */
+    @JsonProperty("deposit")
+    public Integer getDeposit() {
+        return deposit;
+    }
+
+    /**
+     * Deposit
+     * 
+     */
+    @JsonProperty("deposit")
+    public void setDeposit(Integer deposit) {
+        this.deposit = deposit;
+    }
+
+    /**
+     * Address
+     * <p>
+     * Address object
+     * 
+     */
+    @JsonProperty("address")
+    public Address getAddress() {
+        return address;
+    }
+
+    /**
+     * Address
+     * <p>
+     * Address object
+     * 
+     */
+    @JsonProperty("address")
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
     @JsonAnyGetter
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
@@ -135,6 +297,30 @@ public class Booking {
         sb.append("lastName");
         sb.append('=');
         sb.append(((this.lastName == null)?"<null>":this.lastName));
+        sb.append(',');
+        sb.append("dateOfBirth");
+        sb.append('=');
+        sb.append(((this.dateOfBirth == null)?"<null>":this.dateOfBirth));
+        sb.append(',');
+        sb.append("checkinDateTime");
+        sb.append('=');
+        sb.append(((this.checkinDateTime == null)?"<null>":this.checkinDateTime));
+        sb.append(',');
+        sb.append("checkoutDateTime");
+        sb.append('=');
+        sb.append(((this.checkoutDateTime == null)?"<null>":this.checkoutDateTime));
+        sb.append(',');
+        sb.append("totalPrice");
+        sb.append('=');
+        sb.append(((this.totalPrice == null)?"<null>":this.totalPrice));
+        sb.append(',');
+        sb.append("deposit");
+        sb.append('=');
+        sb.append(((this.deposit == null)?"<null>":this.deposit));
+        sb.append(',');
+        sb.append("address");
+        sb.append('=');
+        sb.append(((this.address == null)?"<null>":this.address));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');

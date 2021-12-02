@@ -1,2 +1,8 @@
+/Users/amishasingh/Documents/Important_Documents/Attempts/bookingserv/bookingservImplementation/src/main/java/com/paypal/bfs/test/bookingserv/dao/BookingRepository.java
+/Users/amishasingh/Documents/Important_Documents/Attempts/bookingserv/bookingservImplementation/src/main/java/com/paypal/bfs/test/bookingserv/model/db/Booking.java
 /Users/amishasingh/Documents/Important_Documents/Attempts/bookingserv/bookingservImplementation/src/main/java/com/paypal/bfs/test/bookingserv/BookingServApplication.java
+/Users/amishasingh/Documents/Important_Documents/Attempts/bookingserv/bookingservImplementation/src/main/java/com/paypal/bfs/test/bookingserv/dao/AddressRepository.java
+/Users/amishasingh/Documents/Important_Documents/Attempts/bookingserv/bookingservImplementation/src/main/java/com/paypal/bfs/test/bookingserv/dao/BookingAddressRepository.java
 /Users/amishasingh/Documents/Important_Documents/Attempts/bookingserv/bookingservImplementation/src/main/java/com/paypal/bfs/test/bookingserv/impl/BookingResourceImpl.java
+/Users/amishasingh/Documents/Important_Documents/Attempts/bookingserv/bookingservImplementation/src/main/java/com/paypal/bfs/test/bookingserv/model/db/Address.java
+/Users/amishasingh/Documents/Important_Documents/Attempts/bookingserv/bookingservImplementation/src/main/java/com/paypal/bfs/test/bookingserv/model/db/BookingAddress.java

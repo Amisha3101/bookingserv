@@ -1,2 +1,8 @@
+com/paypal/bfs/test/bookingserv/dao/BookingRepository.class
 com/paypal/bfs/test/bookingserv/impl/BookingResourceImpl.class
 com/paypal/bfs/test/bookingserv/BookingServApplication.class
+com/paypal/bfs/test/bookingserv/dao/BookingAddressRepository.class
+com/paypal/bfs/test/bookingserv/model/db/Address.class
+com/paypal/bfs/test/bookingserv/model/db/BookingAddress.class
+com/paypal/bfs/test/bookingserv/model/db/Booking.class
+com/paypal/bfs/test/bookingserv/dao/AddressRepository.class
